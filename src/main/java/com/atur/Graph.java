@@ -3,12 +3,19 @@ import java.util.*;
 
 public class Graph {
     public int nodes;
+    public List<Edge>[] adj;
     public List<Edge> edges;
+    @SuppressWarnings("unchecked")
     public Graph(int nodes) {
         this.nodes = nodes;
-        this.edges = new ArrayList<>();
+        adj = new ArrayList[nodes];
+        for (int i = 0; i < nodes; i++) adj[i] = new ArrayList<>();
+        edges = new ArrayList<>();
     }
-    public void addEdge(int from, int to, double weight) {
-        edges.add(new Edge(from, to, weight));
+    public void addEdge(int u, int v, double w) {
+        Edge e = new Edge(u, v, w);
+        edges.add(e);
+        adj[u].add(e);
+        adj[v].add(e);
     }
 }
