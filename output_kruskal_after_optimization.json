@@ -3,8 +3,8 @@
     "vertices": 5,
     "edges": 6,
     "totalCost": 2355.0,
-    "operations": 6,
-    "timeMs": 0.0165,
+    "operations": 22,
+    "timeMs": 0.0115,
     "mstEdges": [
       {
         "from": 2,
@@ -32,8 +32,8 @@
     "vertices": 10,
     "edges": 21,
     "totalCost": 2053.0,
-    "operations": 21,
-    "timeMs": 0.007,
+    "operations": 94,
+    "timeMs": 0.0058,
     "mstEdges": [
       {
         "from": 4,
@@ -86,8 +86,8 @@
     "vertices": 15,
     "edges": 25,
     "totalCost": 4026.0,
-    "operations": 25,
-    "timeMs": 0.0098,
+    "operations": 112,
+    "timeMs": 0.0104,
     "mstEdges": [
       {
         "from": 6,
@@ -165,8 +165,8 @@
     "vertices": 20,
     "edges": 94,
     "totalCost": 2694.0,
-    "operations": 94,
-    "timeMs": 0.0444,
+    "operations": 445,
+    "timeMs": 0.0535,
     "mstEdges": [
       {
         "from": 18,
@@ -269,8 +269,8 @@
     "vertices": 25,
     "edges": 132,
     "totalCost": 3129.0,
-    "operations": 132,
-    "timeMs": 0.0506,
+    "operations": 626,
+    "timeMs": 0.0485,
     "mstEdges": [
       {
         "from": 22,
@@ -398,8 +398,8 @@
     "vertices": 30,
     "edges": 49,
     "totalCost": 9647.0,
-    "operations": 49,
-    "timeMs": 0.0154,
+    "operations": 223,
+    "timeMs": 0.0118,
     "mstEdges": [
       {
         "from": 10,
@@ -552,8 +552,8 @@
     "vertices": 60,
     "edges": 68,
     "totalCost": 21992.0,
-    "operations": 68,
-    "timeMs": 0.0211,
+    "operations": 292,
+    "timeMs": 0.0161,
     "mstEdges": [
       {
         "from": 57,
@@ -826,8 +826,8 @@
     "vertices": 90,
     "edges": 321,
     "totalCost": 17875.0,
-    "operations": 321,
-    "timeMs": 0.0513,
+    "operations": 1537,
+    "timeMs": 0.0431,
     "mstEdges": [
       {
         "from": 54,
@@ -1280,8 +1280,8 @@
     "vertices": 120,
     "edges": 1860,
     "totalCost": 4236.0,
-    "operations": 1860,
-    "timeMs": 0.4583,
+    "operations": 9205,
+    "timeMs": 0.2507,
     "mstEdges": [
       {
         "from": 100,
@@ -1884,8 +1884,8 @@
     "vertices": 150,
     "edges": 5366,
     "totalCost": 2363.0,
-    "operations": 5366,
-    "timeMs": 0.853,
+    "operations": 26684,
+    "timeMs": 0.5027,
     "mstEdges": [
       {
         "from": 128,
@@ -2638,8 +2638,8 @@
     "vertices": 180,
     "edges": 2689,
     "totalCost": 8344.0,
-    "operations": 2689,
-    "timeMs": 0.4429,
+    "operations": 13322,
+    "timeMs": 0.2855,
     "mstEdges": [
       {
         "from": 92,
@@ -3542,8 +3542,8 @@
     "vertices": 210,
     "edges": 277,
     "totalCost": 77732.0,
-    "operations": 277,
-    "timeMs": 0.0528,
+    "operations": 1251,
+    "timeMs": 0.0371,
     "mstEdges": [
       {
         "from": 167,
@@ -4546,8 +4546,8 @@
     "vertices": 240,
     "edges": 306,
     "totalCost": 77782.0,
-    "operations": 306,
-    "timeMs": 0.0433,
+    "operations": 1371,
+    "timeMs": 0.0424,
     "mstEdges": [
       {
         "from": 154,
@@ -5630,8 +5630,8 @@
     "vertices": 270,
     "edges": 11442,
     "totalCost": 4159.0,
-    "operations": 11442,
-    "timeMs": 2.6174,
+    "operations": 57012,
+    "timeMs": 1.958,
     "mstEdges": [
       {
         "from": 113,
@@ -6984,8 +6984,8 @@
     "vertices": 300,
     "edges": 3044,
     "totalCost": 18305.0,
-    "operations": 3044,
-    "timeMs": 0.71,
+    "operations": 15033,
+    "timeMs": 0.3607,
     "mstEdges": [
       {
         "from": 47,
@@ -8488,8 +8488,8 @@
     "vertices": 400,
     "edges": 8980,
     "totalCost": 10897.0,
-    "operations": 8980,
-    "timeMs": 2.6126,
+    "operations": 44633,
+    "timeMs": 0.7148,
     "mstEdges": [
       {
         "from": 135,
@@ -10492,8 +10492,8 @@
     "vertices": 450,
     "edges": 617,
     "totalCost": 162203.0,
-    "operations": 617,
-    "timeMs": 0.1351,
+    "operations": 2807,
+    "timeMs": 0.0576,
     "mstEdges": [
       {
         "from": 356,
@@ -12586,8 +12586,8 @@
     "vertices": 500,
     "edges": 18864,
     "totalCost": 7758.0,
-    "operations": 18864,
-    "timeMs": 6.2842,
+    "operations": 94022,
+    "timeMs": 3.0126,
     "mstEdges": [
       {
         "from": 488,
@@ -15090,8 +15090,8 @@
     "vertices": 550,
     "edges": 3111,
     "totalCost": 59403.0,
-    "operations": 3111,
-    "timeMs": 0.8491,
+    "operations": 15252,
+    "timeMs": 0.3107,
     "mstEdges": [
       {
         "from": 358,
@@ -17844,8 +17844,8 @@
     "vertices": 600,
     "edges": 15920,
     "totalCost": 14263.0,
-    "operations": 15920,
-    "timeMs": 5.3409,
+    "operations": 79235,
+    "timeMs": 1.7033,
     "mstEdges": [
       {
         "from": 311,
@@ -20848,8 +20848,8 @@
     "vertices": 650,
     "edges": 659,
     "totalCost": 240061.0,
-    "operations": 659,
-    "timeMs": 0.1475,
+    "operations": 2863,
+    "timeMs": 0.0644,
     "mstEdges": [
       {
         "from": 51,
@@ -23572,8 +23572,8 @@
     "vertices": 700,
     "edges": 776,
     "totalCost": 257964.0,
-    "operations": 776,
-    "timeMs": 0.1633,
+    "operations": 3419,
+    "timeMs": 0.1079,
     "mstEdges": [
       {
         "from": 311,
@@ -26676,8 +26676,8 @@
     "vertices": 750,
     "edges": 1183,
     "totalCost": 244237.0,
-    "operations": 1183,
-    "timeMs": 0.2473,
+    "operations": 5477,
+    "timeMs": 0.0661,
     "mstEdges": [
       {
         "from": 410,
@@ -30285,8 +30285,8 @@
     "vertices": 800,
     "edges": 1188,
     "totalCost": 252364.0,
-    "operations": 1188,
-    "timeMs": 0.1343,
+    "operations": 5466,
+    "timeMs": 0.0745,
     "mstEdges": [
       {
         "from": 783,
@@ -34099,8 +34099,8 @@
     "vertices": 850,
     "edges": 1492,
     "totalCost": 264581.0,
-    "operations": 1492,
-    "timeMs": 0.1949,
+    "operations": 6990,
+    "timeMs": 0.0481,
     "mstEdges": [
       {
         "from": 491,
@@ -38238,8 +38238,8 @@
     "vertices": 1300,
     "edges": 2392,
     "totalCost": 390428.0,
-    "operations": 2392,
-    "timeMs": 0.4998,
+    "operations": 11242,
+    "timeMs": 0.0728,
     "mstEdges": [
       {
         "from": 970,
@@ -44547,8 +44547,8 @@
     "vertices": 1600,
     "edges": 2916,
     "totalCost": 472614.0,
-    "operations": 2916,
-    "timeMs": 0.6454,
+    "operations": 13751,
+    "timeMs": 0.0881,
     "mstEdges": [
       {
         "from": 1479,
@@ -52351,8 +52351,8 @@
     "vertices": 1900,
     "edges": 3226,
     "totalCost": 582972.0,
-    "operations": 3226,
-    "timeMs": 0.6955,
+    "operations": 15145,
+    "timeMs": 0.1169,
     "mstEdges": [
       {
         "from": 190,
