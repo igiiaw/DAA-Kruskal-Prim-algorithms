@@ -7,20 +7,16 @@ public class KruskalMST {
         Collections.sort(edges);
         UnionFind uf = new UnionFind(g.nodes);
         List<Edge> res = new ArrayList<>();
-        long ops = 0;
-        double start = System.nanoTime();
+        long start = System.nanoTime();
         for (Edge e : edges) {
-            int ru = uf.find(e.from);
-            int rv = uf.find(e.to);
-            ops++;
-            if (ru != rv) {
+            boolean merged = uf.union(e.from, e.to);
+            if (merged) {
                 res.add(e);
-                uf.union(ru, rv);
             }
         }
-        double end = System.nanoTime();
+        long end = System.nanoTime();
         double total = 0;
         for (Edge e : res) total += e.weight;
-        return new Result(res, total, g.nodes, g.edges.size(), ops, (end - start) / 1000000);
+        return new Result(res, total, g.nodes, g.edges.size(), uf.ops, (end - start) / 1000000.0);
     }
 }
