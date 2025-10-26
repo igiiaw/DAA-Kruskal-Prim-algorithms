@@ -5,49 +5,41 @@ public class PrimMST {
     public static Result run(Graph g) {
         int nodes = g.nodes;
         boolean[] used = new boolean[nodes];
-        double[] minEdge = new double[nodes];
-        int[] selEdge = new int[nodes];
-        for (int i = 0; i < nodes; i++) {
-            minEdge[i] = Double.POSITIVE_INFINITY;
-            selEdge[i] = -1;
-        }
-        List<Edge> result = new ArrayList<>();
-        minEdge[0] = 0;
+        double[] dist = new double[nodes];
+        int[] parent = new int[nodes];
+        Arrays.fill(dist, Double.POSITIVE_INFINITY);
+        Arrays.fill(parent, -1);
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingDouble(a -> a[1]));
+        dist[0] = 0;
+        pq.add(new int[]{0, 0});
         long ops = 0;
-        double start = System.nanoTime();
-        for (int i = 0; i < nodes; i++) {
-            int v = -1;
-            for (int j = 0; j < nodes; j++) {
-                if (!used[j] && (v == -1 || minEdge[j] < minEdge[v])) {
-                    v = j;
-                }
-                ops++;
-            }
-            if (minEdge[v] == Double.POSITIVE_INFINITY)
-                break;
+        long start = System.nanoTime();
+        while (!pq.isEmpty()) {
+            int[] cur = pq.poll();
+            int v = cur[0];
+            if (used[v]) continue;
             used[v] = true;
-            if (selEdge[v] != -1) {
-                result.add(new Edge(selEdge[v], v, minEdge[v]));
-            }
-            for (Edge e : g.edges) {
-                if (e.from == v) {
-                    if (!used[e.to] && e.weight < minEdge[e.to]) {
-                        minEdge[e.to] = e.weight;
-                        selEdge[e.to] = v;
-                    }
-                    ops++;
-                } else if (e.to == v) {
-                    if (!used[e.from] && e.weight < minEdge[e.from]) {
-                        minEdge[e.from] = e.weight;
-                        selEdge[e.from] = v;
-                    }
-                    ops++;
+            for (Edge e : g.adj[v]) {
+                int to = e.from == v ? e.to : e.from;
+                ops++;
+                if (!used[to] && e.weight < dist[to]) {
+                    dist[to] = e.weight;
+                    parent[to] = v;
+                    pq.add(new int[]{to, (int)e.weight});
                 }
             }
         }
-        double end = System.nanoTime();
+        long end = System.nanoTime();
+        List<Edge> res = new ArrayList<>();
         double total = 0;
-        for (Edge e : result) total += e.weight;
-        return new Result(result, total, g.nodes, g.edges.size(), ops, (end - start) / 1000000);
+        for (int i = 0; i < nodes; i++) {
+            if (parent[i] != -1) {
+                double w = dist[i];
+                res.add(new Edge(parent[i], i, w));
+                total += w;
+            }
+        }
+        int edgeCount = g.edges.size();
+        return new Result(res, total, g.nodes, edgeCount, ops, (end - start) / 1000000.0);
     }
 }
